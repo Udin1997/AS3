@@ -13,8 +13,8 @@ public class MainActivity extends AppCompatActivity {
     String[] items;
     String[] prices;
     String[] descriptions;
-    @Override
 
+    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
@@ -24,7 +24,6 @@ public class MainActivity extends AppCompatActivity {
         items=res.getStringArray(R.array.items);
         prices=res.getStringArray(R.array.prices);
         descriptions=res.getStringArray(R.array.descriptions);
-
 
         ItemAdapter itemAdapter = new ItemAdapter(this,items,prices,descriptions);
         myListView.setAdapter(itemAdapter);
